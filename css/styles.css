@@ -5,37 +5,128 @@ body {
 /* 👇👇👇 Paste the styles of your Fancy Robot from the "Position it right" assignment here 👇👇👇 */
 
 .robot-container {
+  margin: auto;
+  width: 400px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .robot-face-shape {
+  position: relative;;
+  width: 200px;
+  height: 200px;
+  left: 100px;
+  top: 75px;
+  background-color:DodgerBlue;/*w3schools color*/
+  border: 2px solid white;
+  border-radius: 10px;
 }
 
 .robot-eye-left {
+  position: relative;
+  left: 1.25em;
+  top: 1.25em;
+  background: url("https://picsum.photos/50/") no-repeat center/cover;
+  clip-path: polygon(50% 0%,0% 100%, 100% 100%);
+  width: 50px;
+  height: 50px;
 }
 
 .robot-eye-right {
+  position: relative;
+  top: -80px;
+  left: 100px;
+  border-bottom: 50px solid yellow;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  height: 25%;
+  width: 25%;
 }
 
-.robot-ear-left {
+.robot-ear-left {  
+  position: relative;
+  left: 65px;
+  top: -80px;
+  width: 35px;
+  height: 50px;
+  background-color: skyblue;
+  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
 }
 
 .robot-ear-right {
+  position: relative;
+  left: 300px;
+  top: -130px;
+  width: 40px;
+  height: 50px;
+  background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #12c2e9, #c471ed, #f64f59); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 60% 60% 30% 30%;
 }
 
 .robot-nose {
-}
-
-.robot-nose:before {
-}
-
-.robot-nose:after {
+  position: relative;
+  left: 75px;
+  top: -60px;
+  width: 35px;
+  height: 35px;
+  background-color: green;
+  border-radius: 50%;
+  opacity: 50%;
 }
 
 .robot-teeth {
+  overflow: hidden;
+  position: relative;
+  width: 100px;
+  height: 35px;
+  background: black;
+  border: 2px solid white;
+  top: -45px;
+  left: 45px;
+  border-radius: 50%;
 }
 
 .robot-tooth {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-bottom: 1px solid white;
+  background-color: gray;
 }
 
 .robot-hair-style {
+  position: relative;
+  display: inline-flex;
+  bottom: 325px;
+  left: 120px;
+  width: 0px;
+}
+
+.robot-hair-one {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 100px solid greenyellow;
+}
+
+.robot-hair-two {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 100px solid lightslategray;
+}
+
+.robot-hair-three {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 100px solid chocolate;
 }
